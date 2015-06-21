@@ -25,8 +25,10 @@ ok <- NULL
 ## (Programming in R) Write a short comment describing this function
 
 cacheSolve <- function(x, ...) {
- mtx <- x$getinverse()
+#retrieves the matrix
+mtx <- x$getinverse()
 +        if(!is.null(ok)) {
+#display the matrix in console
                  message("getting cached data")
 +                return(ok)
 +        }
